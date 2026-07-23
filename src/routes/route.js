@@ -1,9 +1,9 @@
 import express from "express";
-import { CheckPropertyId } from "../controllers/login.js";
+import { checkUserLogin } from "../controllers/login.js";
 
 const router = express.Router();
 
 
-router.post("/check-property", CheckPropertyId);
+router.post("/check-property", checkUserLogin);
 export default router;
 
